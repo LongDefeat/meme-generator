@@ -63,3 +63,8 @@ form {
   border: solid black;
   margin-left: 170px;
 }
+
+#meme-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}

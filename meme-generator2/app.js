@@ -35,12 +35,14 @@ function createMeme(linkImage, topText, bottomText) {
   });
   imageDiv.appendChild(deleteMemeBtn);
 
+  // creates meme and styles it
   let createImg = document.createElement("img");
   createImg.src = linkImage.value;
   createImg.style.height = "400px";
   createImg.style.width = "400px";
   imageDiv.appendChild(createImg);
 
+  // creates top and bottom text to meme
   let createTop = document.createElement("p");
   let createBottom = document.createElement("p");
   createTop.classList.add("top-text");
@@ -51,5 +53,5 @@ function createMeme(linkImage, topText, bottomText) {
   imageDiv.appendChild(createTop);
   imageDiv.appendChild(createBottom);
 
-  document.body.appendChild(imageDiv);
+  document.querySelector("#meme-container").appendChild(imageDiv);
 }
