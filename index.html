@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="body">
+    <h1 id="title"><strong>Meme Dreamer</strong></h1>
+
+    <p id="directions">
+      <strong>Directions: </strong> Enter a link (URL) to the picture you'd like
+      to use, then enter text in the top and bottom of the meme. After that,
+      click "Create Meme" - easy!
+    </p>
+
+    <form action="image" class="form">
+      <label for="meme-input">Link Image:</label>
+      <input type="url" id="meme-input" name="image" /><br /><br />
+      <p>
+        <label for="top-text">Top Text:</label>
+        <textarea id="top-text"></textarea>
+      </p>
+      <p>
+        <label for="bottom-text">Bottom Text:</label>
+        <textarea id="bottom-text"></textarea>
+      </p>
+      <button type="submit" id="create-meme">Create Meme</button>
+    </form>
+
+    <div id="meme-container"></div>
+
+    <script src="functions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+.image-div {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 15px;
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeIn 1s both;
+}
+
+.image-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form input[type="url"],
+.form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #5da360;
+}
+
+.top-text {
+  top: 0;
+}
+
+.bottom-text {
+  bottom: 0;
+}
+
+.top-text,
+.bottom-text {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Impact", sans-serif;
+  overflow-wrap: break-word;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.remove-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgba(255, 0, 0, 0.658);
+}
+
+.body {
+  background-color: rgba(130, 49, 197, 0.664);
+}
+
+#directions {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+#title {
+  position: static;
+  display: grid;
+}
+
+#create-meme {
+  border: solid black;
+  margin-left: 170px;
+}
+
+#meme-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #ff6347;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  font-family: "Arial", sans-serif;
+  animation-name: waveAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: skewY(0deg);
+  }
+  25% {
+    transform: skewY(-10deg);
+  }
+  50% {
+    transform: skewY(0deg);
+  }
+  75% {
+    transform: skewY(10deg);
+  }
+  100% {
+    transform: skewY(0deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
